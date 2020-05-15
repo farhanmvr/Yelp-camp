@@ -1,0 +1,19 @@
+<%- include('../partials/header') %>
+
+<div class="container">
+    <div class="row-1 mt-5">
+        <h2 class="mb-5 text-center">CREATE NEW CAMPGROUND</h2>
+        <div style="width: 30%; margin: 0 auto;">
+            <form action="/campgrounds" method="POST">
+                <input class="form-control mb-3" type="text" name="name" placeholder="name">
+                <input class="form-control mb-3" type="number" name="price" placeholder="price" min="0.01" step="0.01">
+                <input class="form-control mb-3" type="text" name="image" placeholder="image url">
+                <input class="form-control mb-3" type="text" name="desc" placeholder="description">
+                <button class="btn btn-primary btn-block mb-3">Add to List</button>
+            </form>
+            <a href="/campgrounds">Go Back</a>
+        </div>
+    </div>
+</div>
+
+<%- include('../partials/footer') %>
