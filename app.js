@@ -26,7 +26,7 @@ mongoose.connect('mongodb+srv://farhanxavio:sighin00@cluster0-yeozg.mongodb.net/
 }).then(() => {
     console.log('connected to db')
 }).catch(err => {
-    console.log('ERROR:',err.message)
+    console.log('Error found!!!!!!!!!!!:',err.message)
 })
 app.use(bodyParser.urlencoded({extended:true}))
 app.set('view engine','ejs')
